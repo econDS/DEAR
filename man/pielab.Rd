@@ -4,8 +4,8 @@
 \alias{pielab}
 \title{pielab}
 \usage{
-pielab(x, lb = c("Cat1", "Cat2"), cl = c("cyan", "pink"), tt = "Title",
-  center = FALSE, fade = FALSE)
+pielab(x, lb = "default", cl = "default", tt = "", center = FALSE,
+  fade = FALSE)
 }
 \arguments{
 \item{x}{a vector of categories variable}
@@ -27,5 +27,6 @@ piechar and freqeuncy_table
 create a pie chart with percentage label.
 }
 \examples{
-pielab(iris$Species)
+a <- c("A","A","A","B","B","C")
+pielab(a)
 }
