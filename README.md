@@ -13,7 +13,7 @@ If you are already have installed "devtools" skip code above and run run followi
 library(devtools)
 install_github("econDS/DEAR")
 ```
-Test a function
+To test a function
 ```
 a <- c("A","A","A","B","B","C")
 pielab(a)
