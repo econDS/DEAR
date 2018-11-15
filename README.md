@@ -1,6 +1,9 @@
 # DEAR package
-To install this package, run following command.
+Data Exploratory Analysis for R.
 
+This is my first R package and it is still in development phase. please feel free to give suggestion or contribution. 
+
+To install this package, run following command.<br/>
 If you don't have "devtools" package please install it first using this command.
 ```
 install.packages("devtools")
