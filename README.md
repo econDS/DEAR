@@ -15,6 +15,7 @@ install_github("econDS/DEAR")
 ```
 To test a function
 ```
+library(DEAR)
 a <- c("A","A","A","B","B","C")
 pielab(a)
 
