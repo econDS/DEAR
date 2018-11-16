@@ -1,2 +1,5 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("graphics", "pie")
+importFrom("grDevices", "rainbow")
+importFrom("graphics", "barplot", "boxplot", "hist", "mtext", "par",
+             "text")

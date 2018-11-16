@@ -2,7 +2,7 @@
 % Please edit documentation in R/pielab.R
 \name{pielab}
 \alias{pielab}
-\title{pielab}
+\title{pie chart with label}
 \usage{
 pielab(x, label = "default", col = "default",
   title = deparse(substitute(x)), center = FALSE, fade = FALSE)
@@ -14,11 +14,11 @@ pielab(x, label = "default", col = "default",
 
 \item{col}{a vector of colors}
 
+\item{title}{a title of plot}
+
 \item{center}{start division line at center}
 
 \item{fade}{make the pie chart fade}
-
-\item{titile}{a title of plot}
 }
 \value{
 piechar and freqeuncy_table

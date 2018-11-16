@@ -1,11 +1,11 @@
-#' pielab
+#' pie chart with label
 #'
 #' create a pie chart with percentage label.
 #'
 #' @param x a vector of categories variable
 #' @param label a label of each category
 #' @param col a vector of colors
-#' @param titile a title of plot
+#' @param title a title of plot
 #' @param center start division line at center
 #' @param fade make the pie chart fade
 #'

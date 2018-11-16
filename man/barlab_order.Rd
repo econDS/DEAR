@@ -10,14 +10,15 @@ barlab_order(x, percent = FALSE, title = deparse(substitute(x)),
 \arguments{
 \item{x}{a categorical variable.}
 
-\item{percent}{a logical for display label as percentage.}
+\item{percent}{a logical for display labels as percentage.}
 
 \item{title}{a title of plot}
 
-\item{unlimit}{a logical for set plot more than 10 categories}
+\item{unlimit}{a logical for setting plot more than 10 categories}
 }
 \description{
-barplot with label and sorted frequency
+create barplot with label on top and sorted the categories by frequency
+from highest to lowest.
 }
 \examples{
 a <- c("A", "A", "B", "B", "B", "C")

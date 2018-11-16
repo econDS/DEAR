@@ -1,9 +1,12 @@
 #' barplot with label and sorted frequency
 #'
+#' create barplot with label on top and sorted the categories by frequency
+#' from highest to lowest.
+#'
 #' @param x a categorical variable.
-#' @param percent a logical for display label as percentage.
+#' @param percent a logical for display labels as percentage.
 #' @param title a title of plot
-#' @param unlimit a logical for set plot more than 10 categories
+#' @param unlimit a logical for setting plot more than 10 categories
 #'
 #' @return
 #' @export

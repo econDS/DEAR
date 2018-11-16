@@ -1,4 +1,6 @@
-#' create histogram and boxplot of a numeric variable
+#' distribution diagnosis
+#'
+#' create histogram and boxplot of variable.
 #'
 #' @param x a numerical vector
 #' @param title title of plot
