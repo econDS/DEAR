@@ -4,21 +4,21 @@
 \alias{pielab}
 \title{pielab}
 \usage{
-pielab(x, lb = "default", cl = "default", tt = "", center = FALSE,
-  fade = FALSE)
+pielab(x, label = "default", col = "default",
+  title = deparse(substitute(x)), center = FALSE, fade = FALSE)
 }
 \arguments{
 \item{x}{a vector of categories variable}
 
-\item{lb}{a label of each category}
+\item{label}{a label of each category}
 
-\item{cl}{a vector of colors}
-
-\item{tt}{a title of plot}
+\item{col}{a vector of colors}
 
 \item{center}{start division line at center}
 
 \item{fade}{make the pie chart fade}
+
+\item{titile}{a title of plot}
 }
 \value{
 piechar and freqeuncy_table
