@@ -2,7 +2,7 @@
 % Please edit documentation in R/dist_diag.R
 \name{dist_diag}
 \alias{dist_diag}
-\title{dist_diag}
+\title{create histogram and boxplot of a numeric variable}
 \usage{
 dist_diag(x, title = deparse(substitute(x)))
 }
@@ -15,7 +15,7 @@ dist_diag(x, title = deparse(substitute(x)))
 histogram and box plot
 }
 \description{
-dist_diag
+create histogram and boxplot of a numeric variable
 }
 \examples{
 dist_diag(mtcars$mpg)

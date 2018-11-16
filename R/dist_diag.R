@@ -1,4 +1,4 @@
-#' dist_diag
+#' create histogram and boxplot of a numeric variable
 #'
 #' @param x a numerical vector
 #' @param title title of plot
