@@ -20,7 +20,7 @@ pielab <- function(x, label="default", col="default", title=deparse(substitute(x
   pct <- round(table(ft)*100/sum(table(ft)), digits = 1)
 
   if(label=="default"){
-    label <- unique(ft)
+    label <- levels(ft)
     label <- paste(label, pct)
     label <- paste(label,"%",sep="")
   } else {
