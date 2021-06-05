@@ -52,4 +52,4 @@ barlab_order <- function(x, percent=FALSE, title=deparse(substitute(x)),
     }
   }
 }
-barlab_order(df$position, T, decimal=0)
+
