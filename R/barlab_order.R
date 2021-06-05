@@ -45,9 +45,9 @@ barlab_order <- function(x, percent=FALSE, title=deparse(substitute(x)), unlimit
         p <- barplot(freq[ind], names.arg = lbl, main=title,
                      col=rainbow(10), ylim=c(0, max(freq)*1.2), ylab='count')
         text(p, freq[ind], label = freq[ind], pos = 3, cex = 0.8)
+        aty <- seq(par("yaxp")[1], par("yaxp")[2], (par("yaxp")[2] - par("yaxp")[1])/par("yaxp")[3])
+        axis(2, at=aty, labels=format(aty, scientific=FALSE), hadj=0.9, cex.axis=0.8, las=2)
       }
     }
   }
 }
-
-
