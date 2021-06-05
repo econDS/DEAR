@@ -15,7 +15,8 @@
 #' a <- c("A", "A", "B", "B", "B", "C")
 #' barlab_order(a)
 #' barlab_order(a, percent = TRUE)
-barlab_order <- function(x, percent=FALSE, title=deparse(substitute(x)), unlimit=FALSE) {
+barlab_order <- function(x, percent=FALSE, title=deparse(substitute(x)),
+                         unlimit=FALSE, decimal=0) {
   freq <- as.matrix(table(x))
   ind  <- order(freq, decreasing = TRUE)
   lbl <- attr(freq, "dimnames")[[1]][ind]
@@ -36,13 +37,13 @@ barlab_order <- function(x, percent=FALSE, title=deparse(substitute(x)), unlimit
       rm(op)
     } else {
       if(percent){
-        pct <- round(table(x)*100/sum(table(x)))
+        pct <- round(table(x)*100/sum(table(x)), decimal)
         pct_lb <- paste(pct,"%",sep="")
         p <- barplot(pct[ind], names.arg = lbl, main=title,
-                     col=rainbow(10), ylim=c(0, max(pct)*1.2), ylab='percent')
+                     col=rainbow(10), ylim=c(0, max(pct)*1.199), ylab='percent')
         text(p, pct[ind], label = pct_lb[ind], pos = 3, cex = 0.8)
       } else {
-        p <- barplot(freq[ind], names.arg = lbl, main=title,
+        p <- barplot(freq[ind], names.arg = lbl, main=title, yaxt="n",
                      col=rainbow(10), ylim=c(0, max(freq)*1.2), ylab='count')
         text(p, freq[ind], label = freq[ind], pos = 3, cex = 0.8)
         aty <- seq(par("yaxp")[1], par("yaxp")[2], (par("yaxp")[2] - par("yaxp")[1])/par("yaxp")[3])
@@ -51,3 +52,4 @@ barlab_order <- function(x, percent=FALSE, title=deparse(substitute(x)), unlimit
     }
   }
 }
+barlab_order(df$position, T, decimal=0)
