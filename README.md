@@ -1,4 +1,7 @@
 # DEAR package
+![GitHub R package version](https://img.shields.io/github/r-package/v/econDS/DEAR)
+![GitHub repo size](https://img.shields.io/github/repo-size/econDS/DEAR)
+
 Data Exploratory Analysis for R.
 
 This is my first R package and it is still in development phase. Please feel free to give suggestion or contribution. 
